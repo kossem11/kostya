@@ -32,7 +32,7 @@ public class DevsFragment extends Fragment {
 
         return view;
     }
-
+//zwaesxrdctfvybghujimo,k
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
