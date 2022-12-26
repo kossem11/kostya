@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">I am new fragment</string>
+    <string name="Profile">Profile</string>
+    <string name="Main">Main</string>
+    <string name="Settings">Settings</string>
+    <string name="Login">Login</string>
+    <string name="SwipeRight">Swipe Right</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="RetypePassword">RetypePassword</string>
+    <string name="Registration">Registration</string>
+    <string name="SwipeLeft">SwipeLeft</string>
+    <string name="Phone">Number Phone</string>
+    <string name="Update">Update</string>
+    <string name="Privacy">Privacy</string>
+    <string name="Exit">Exit</string>
+    <string name="PleaseWait">Please Wait…</string>
+    <string name="Devs">Devs</string>
+    <string name="testapp">Test App</string>
+    <string name="app_name">Test App</string>
+    <string name="search">Service search</string>
+    <string name="calculator">Calculator</string>
+    <string name="profileDelete">Delete profile</string>
+    <string name="sberbank_ru">sberbank.ru</string>
+    <string name="Оплата">Оплатить</string>
+</resources>

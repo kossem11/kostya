@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">Я новый фрагмент</string>
+    <string name="Profile">Профиль</string>
+    <string name="Main">Главная</string>
+    <string name="Settings">Настройки</string>
+    <string name="Login">Логин</string>
+    <string name="SwipeRight">Свайпни вправо</string>
+    <string name="Password">Пароль</string>
+    <string name="Email">Емейл</string>
+    <string name="RetypePassword">Повтори Пароль</string>
+    <string name="Registration">Регистрация</string>
+    <string name="SwipeLeft">Свайпни Влево</string>
+    <string name="Phone">Номер телефона</string>
+    <string name="Update">Обновить</string>
+    <string name="Privacy">Конфиденциальность</string>
+    <string name="Exit">Выход</string>
+    <string name="PleaseWait">Пожалуйста подождите…</string>
+    <string name="Devs">Разработчики</string>
+    <string name="testapp">Test App</string>
+    <string name="app_name">Test App</string>
+    <string name="search">Поиск сервиса</string>
+    <string name="calculator">Калькулятор</string>
+    <string name="profileDelete">Удалить профиль</string>
+    <string name="sberbank_ru">sberbank.ru</string>
+    <string name="Оплата">Оплатить</string>
+</resources>

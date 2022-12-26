@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491961607099",
+    "project_id": "semenikhin-89088",
+    "storage_bucket": "semenikhin-89088.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491961607099:android:538911a892acf93e36da9e",
+        "android_client_info": {
+          "package_name": "com.example.kostya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491961607099-2s5utp3so1gamjdm2ko4hdh3t43uoh1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kostya",
+            "certificate_hash": "7de480843cfcf5772cd91174bf57b5ca2c759ea6"
+          }
+        },
+        {
+          "client_id": "491961607099-djupvl65t4jlttn4aelguqf5e0sslmfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHwVdNiXQzSbIyjFVYQHKu1wPFIM94ThI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491961607099-djupvl65t4jlttn4aelguqf5e0sslmfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
