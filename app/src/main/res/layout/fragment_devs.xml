@@ -10,7 +10,7 @@
     <WebView
         android:id="@+id/webview"
         android:layout_width="391dp"
-        android:layout_height="330dp"
+        android:layout_height="690dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.178" />
 
     <TextView
         android:id="@+id/textView"

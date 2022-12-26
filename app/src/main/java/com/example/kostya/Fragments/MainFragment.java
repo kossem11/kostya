@@ -36,8 +36,6 @@ public class MainFragment extends Fragment   {
         ImageButton BtnHome = view.findViewById(R.id.BtnHome);
         ImageButton BtnSettings = view.findViewById(R.id.BtnSettings);
         ImageButton BtnMenu = view.findViewById(R.id.BtnMenu);
-        imagebutton = view.findViewById(R.id.imageButton);
-        editText = view.findViewById(R.id.editTextService);
         BtnHome.setOnClickListener(viewCreate -> {
             Bundle bundleHome = new Bundle();
             Navigation.findNavController(view).navigate(R.id.action_mainFragment_self, bundleHome);
@@ -50,13 +48,5 @@ public class MainFragment extends Fragment   {
             Bundle bundleMenu = new Bundle();
             Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_menuFragment, bundleMenu);
         });
-
-        View.OnClickListener onClickListener = view1 -> {
-            String message = editText.getText().toString();
-            Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + message + " Сервис Центр");
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-            startActivity(mapIntent);
-        };
-        imagebutton.setOnClickListener(onClickListener);
     }
 }

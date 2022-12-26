@@ -24,4 +24,6 @@
     <string name="profileDelete">Delete profile</string>
     <string name="sberbank_ru">sberbank.ru</string>
     <string name="Оплата">Оплатить</string>
+    <string name="weblink">www.mirea.ru</string>
+    <string name="text">Раздел содержит информацию о ЖКУ и ежемесячном добровольном страховании.\nС более подробной информацией Вы можете ознакомиться в Личном кабинете на сайте.</string>
 </resources>
