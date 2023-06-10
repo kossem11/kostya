@@ -32,25 +32,10 @@ public class DevsFragment extends Fragment {
 
         return view;
     }
-//zwaesxrdctfvybghujimo,k
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ImageButton BtnHome = view.findViewById(R.id.BtnHome);
-        ImageButton BtnSettings = view.findViewById(R.id.BtnSettings);
-        ImageButton BtnMenu = view.findViewById(R.id.BtnMenu);
-        BtnHome.setOnClickListener(viewCreate -> {
-            Bundle bundleHome = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_devsFragment_to_mainFragment, bundleHome);
-        });
-        BtnMenu.setOnClickListener(viewCreate -> {
-            Bundle bundleHome = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_devsFragment_to_menuFragment, bundleHome);
-        });
-        BtnSettings.setOnClickListener(viewCreate -> {
-            Bundle bundleSettings = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_devsFragment_to_settingsFragment, bundleSettings);
-        });
     }
 }

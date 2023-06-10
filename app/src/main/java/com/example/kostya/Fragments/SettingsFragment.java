@@ -26,23 +26,9 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ImageButton BtnHome = view.findViewById(R.id.BtnHome);
-        ImageButton BtnSettings = view.findViewById(R.id.BtnSettings);
+
         Button BtnProfile = view.findViewById(R.id.BtnProfile);
         Button BtnDevs = view.findViewById(R.id.BtnDevs);
-        ImageButton BtnMenu = view.findViewById(R.id.BtnMenu);
-        BtnHome.setOnClickListener(viewCreate -> {
-            Bundle bundleHome = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_settingsFragment_to_mainFragment, bundleHome);
-        });
-        BtnMenu.setOnClickListener(viewCreate -> {
-            Bundle bundleMenu = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_settingsFragment_to_menuFragment, bundleMenu);
-        });
-        BtnSettings.setOnClickListener(viewCreate -> {
-            Bundle bundleSettings = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_settingsFragment_self, bundleSettings);
-        });
         BtnProfile.setOnClickListener(viewCreate -> {
             Bundle bundleProfile = new Bundle();
             Navigation.findNavController(view).navigate(R.id.action_settingsFragment_to_profileFragment, bundleProfile);

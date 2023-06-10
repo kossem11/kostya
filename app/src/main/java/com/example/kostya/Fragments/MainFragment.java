@@ -33,20 +33,6 @@ public class MainFragment extends Fragment   {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ImageButton BtnHome = view.findViewById(R.id.BtnHome);
-        ImageButton BtnSettings = view.findViewById(R.id.BtnSettings);
-        ImageButton BtnMenu = view.findViewById(R.id.BtnMenu);
-        BtnHome.setOnClickListener(viewCreate -> {
-            Bundle bundleHome = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_mainFragment_self, bundleHome);
-        });
-        BtnSettings.setOnClickListener(viewCreate -> {
-            Bundle bundleSettings = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_settingsFragment, bundleSettings);
-        });
-        BtnMenu.setOnClickListener(viewCreate -> {
-            Bundle bundleMenu = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_menuFragment, bundleMenu);
-        });
+
     }
 }

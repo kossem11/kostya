@@ -2,6 +2,7 @@ package com.example.kostya.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,8 @@ import androidx.navigation.Navigation;
 
 import com.example.kostya.Activity.LogActivity;
 import com.example.kostya.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -23,12 +26,14 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class ProfileFragment extends Fragment {
     public Button signOut;
     private FirebaseAuth mAuth;
-    private FirebaseDatabase db;
-    private DatabaseReference myRef;
+    private FirebaseFirestore db;
     TextView nameProf , emailProf;
 
     @Override
@@ -42,12 +47,10 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
         mAuth = FirebaseAuth.getInstance();
-        db = FirebaseDatabase.getInstance("https://semenikhin-89088-default-rtdb.europe-west1.firebasedatabase.app/");
-        myRef = db.getReference();
+        db = FirebaseFirestore.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
         nameProf = view.findViewById(R.id.nameProf);
         emailProf = view.findViewById(R.id.emailProf);
-        //Button
         signOut = view.findViewById(R.id.signOutButton);
         signOut.setOnClickListener(view12 -> {
             FirebaseAuth.getInstance().signOut();
@@ -55,57 +58,30 @@ public class ProfileFragment extends Fragment {
             startActivity(intent);
         });
 
-        myRef.child("Users").addValueEventListener(new ValueEventListener() {
+        DocumentReference docRef = db.collection("Users").document(user.getUid());
+
+        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                assert user != null;
-                Object nameFrom = snapshot.child(user.getUid()).child("name").getValue();
-                nameProf.setText(nameFrom.toString());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-        myRef.child("Users").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Object emailFrom = snapshot.child(user.getUid()).child("email").getValue();
-                emailProf.setText(emailFrom.toString());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    if (document.exists()) {
+                        nameProf.setText(document.getString("name"));
+                        emailProf.setText(document.getString("email"));
+                    } else {
+                        Log.d("TAG", "No such document");
+                    }
+                } else {
+                    Log.d("TAG", "get failed with ", task.getException());
+                }
             }
         });
 
         return view;
     }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ImageButton BtnHome = view.findViewById(R.id.BtnHome);
-        ImageButton BtnSettings = view.findViewById(R.id.BtnSettings);
-        ImageButton BtnMenu = view.findViewById(R.id.BtnMenu);
-        Button BtnPrivacy = view.findViewById(R.id.BtnPrivacy);
-        BtnHome.setOnClickListener(viewCreate -> {
-            Bundle bundleHome = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_profileFragment_to_mainFragment, bundleHome);
-        });
-        BtnSettings.setOnClickListener(viewCreate -> {
-            Bundle bundleSettings = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_profileFragment_to_settingsFragment, bundleSettings);
-        });
-        BtnMenu.setOnClickListener(viewCreate -> {
-            Bundle bundleMenu = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_profileFragment_to_menuFragment, bundleMenu);
-        });
-        BtnPrivacy.setOnClickListener(viewCreate -> {
-            Bundle bundlePrivacy = new Bundle();
-            Navigation.findNavController(view).navigate(R.id.action_profileFragment_to_privacyFragment, bundlePrivacy);
-        });
     }
 }

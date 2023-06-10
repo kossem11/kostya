@@ -37,45 +37,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="60dp"
-        android:background="@color/menuBackground"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <ImageButton
-            android:id="@+id/BtnHome"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:layout_weight="1"
-            android:background="@color/menuBackground"
-            android:src="@drawable/ic_home" />
-
-        <ImageButton
-            android:id="@+id/BtnMenu"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:layout_weight="1"
-            android:background="@color/menuBackground"
-            android:src="@drawable/ic_menu" />
-
-        <ImageButton
-            android:id="@+id/BtnSettings"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:layout_weight="1"
-            android:background="@color/menuBackground"
-            android:src="@drawable/ic_settings" />
-    </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
