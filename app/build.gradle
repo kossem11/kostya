@@ -28,7 +28,7 @@ android {
     }
     namespace 'com.example.kostya'
     buildFeatures {
-        viewBinding true
+        dataBinding true
     }
 }
 
@@ -49,8 +49,30 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha07'
     implementation 'com.google.android.material:material:1.8.0-alpha01'
 
+// Room
+    def room_version = "2.4.1" // Используйте последнюю версию, которую можно найти здесь: https://developer.android.com/jetpack/androidx/releases/room
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version" // Для Java использовать 'annotationProcessor'. Для Kotlin - 'kapt'
 
+    // ViewModel
+    def lifecycle_version = "2.4.0" // Используйте последнюю версию, которую можно найти здесь: https://developer.android.com/jetpack/androidx/releases/lifecycle
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
 
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+    // RecyclerView
+    def recyclerview_version = "1.2.1" // Используйте последнюю версию, которую можно найти здесь: https://developer.android.com/jetpack/androidx/releases/recyclerview
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+
+    // Библиотека для дополнительной поддержки Android Fragments
+    def fragment_version = "1.4.0" // Используйте последнюю версию, которую можно найти здесь: https://developer.android.com/jetpack/androidx/releases/fragment
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
+    // Зависимости для корутины, которые используются вместе с Room
+    def coroutines_version = "1.5.2" // Используйте последнюю версию, которую можно найти здесь: https://github.com/Kotlin/kotlinx.coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
 }
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'

@@ -1,16 +1,16 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.appcompat:appcompat:1.6.0-beta01@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a96e0602bb2be4ee62bf2a5f75f2a4f2/transformed/appcompat-1.6.0-beta01/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/a96e0602bb2be4ee62bf2a5f75f2a4f2/transformed/appcompat-1.6.0-beta01/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a96e0602bb2be4ee62bf2a5f75f2a4f2/transformed/appcompat-1.6.0-beta01/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a96e0602bb2be4ee62bf2a5f75f2a4f2/transformed/appcompat-1.6.0-beta01/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a96e0602bb2be4ee62bf2a5f75f2a4f2/transformed/appcompat-1.6.0-beta01/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/a96e0602bb2be4ee62bf2a5f75f2a4f2/transformed/appcompat-1.6.0-beta01/res" />
+      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/a96e0602bb2be4ee62bf2a5f75f2a4f2/transformed/appcompat-1.6.0-beta01/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/a96e0602bb2be4ee62bf2a5f75f2a4f2/transformed/appcompat-1.6.0-beta01/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.6.0-beta01/b61edba823aa71c7079d23c4e16605ccc871e7a9/appcompat-1.6.0-beta01-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.6.0-beta01/b61edba823aa71c7079d23c4e16605ccc871e7a9/appcompat-1.6.0-beta01-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

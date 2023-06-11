@@ -45,27 +45,32 @@ public class RegActivity extends AppCompatActivity {
         users = db.collection("Users").document();
 
         signUpBtn.setOnClickListener(view -> {
-            if(!TextUtils.isEmpty(input_email.getText().toString()) && !TextUtils.isEmpty(input_password.getText().toString()) && !TextUtils.isEmpty(input_name.getText().toString())){
+            if (!TextUtils.isEmpty(input_email.getText().toString()) && !TextUtils.isEmpty(input_password.getText().toString()) && !TextUtils.isEmpty(input_name.getText().toString())) {
                 mAuth.createUserWithEmailAndPassword(input_email.getText().toString(), input_password.getText().toString()).addOnCompleteListener(task -> {
-                    if (task.isSuccessful()){
+                    if (task.isSuccessful()) {
                         FirebaseUser firebaseUser = mAuth.getCurrentUser();
                         User user = new User();
                         user.setEmail(input_email.getText().toString());
                         user.setName(input_name.getText().toString());
                         user.setPassword(input_password.getText().toString());
                         if (firebaseUser != null) {
-                            db.collection("Users").document(firebaseUser.getUid()).set(user);
-                            Toast.makeText(RegActivity.this, "Регистрация пройдена", Toast.LENGTH_SHORT).show();
+                            db.collection("Users").document(firebaseUser.getUid()).set(user).addOnCompleteListener(userCreationTask -> {
+                                if (userCreationTask.isSuccessful()) {
+                                    Toast.makeText(RegActivity.this, "Регистрация пройдена", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    String errorMessage = userCreationTask.getException() != null ? userCreationTask.getException().getMessage() : "Ошибка создания пользователя";
+                                    Toast.makeText(RegActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
+                                }
+                            });
                         } else {
                             Toast.makeText(RegActivity.this, "Ошибка создания пользователя", Toast.LENGTH_SHORT).show();
                         }
                     } else {
-                        Toast.makeText(RegActivity.this, "Ошибка", Toast.LENGTH_SHORT).show();
+                        String errorMessage = task.getException() != null ? task.getException().getMessage() : "Ошибка";
+                        Toast.makeText(RegActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
                     }
                 });
-
-            }
-            else {
+            } else {
                 Toast.makeText(RegActivity.this, "Заполните все поля", Toast.LENGTH_SHORT).show();
             }
         });
@@ -74,7 +79,7 @@ public class RegActivity extends AppCompatActivity {
             Intent intent = new Intent(RegActivity.this, LogActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
-            this.finish();
+            finish();
         });
     }
 }

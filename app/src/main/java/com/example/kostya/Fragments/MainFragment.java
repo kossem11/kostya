@@ -19,9 +19,6 @@ import com.example.kostya.R;
 
 public class MainFragment extends Fragment   {
 
-    ImageButton imagebutton;
-    EditText editText;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
