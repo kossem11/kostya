@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.browser:browser:1.4.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/d50d1e22f1a8c8c34275d66cba3e21e8/transformed/browser-1.4.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/c71669f06bcf9d8119cac9a8ac46ae26/transformed/browser-1.4.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/d50d1e22f1a8c8c34275d66cba3e21e8/transformed/browser-1.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/d50d1e22f1a8c8c34275d66cba3e21e8/transformed/browser-1.4.0/res" />
-      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/d50d1e22f1a8c8c34275d66cba3e21e8/transformed/browser-1.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/c71669f06bcf9d8119cac9a8ac46ae26/transformed/browser-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/c71669f06bcf9d8119cac9a8ac46ae26/transformed/browser-1.4.0/res" />
+      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/c71669f06bcf9d8119cac9a8ac46ae26/transformed/browser-1.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

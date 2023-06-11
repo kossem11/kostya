@@ -42,7 +42,7 @@ public class RegActivity extends AppCompatActivity {
         signInBtn = findViewById(R.id.signInBtn);
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
-        users = db.collection("Users").document();
+        users = db.collection("users").document();
 
         signUpBtn.setOnClickListener(view -> {
             if (!TextUtils.isEmpty(input_email.getText().toString()) && !TextUtils.isEmpty(input_password.getText().toString()) && !TextUtils.isEmpty(input_name.getText().toString())) {
@@ -54,7 +54,7 @@ public class RegActivity extends AppCompatActivity {
                         user.setName(input_name.getText().toString());
                         user.setPassword(input_password.getText().toString());
                         if (firebaseUser != null) {
-                            db.collection("Users").document(firebaseUser.getUid()).set(user).addOnCompleteListener(userCreationTask -> {
+                            db.collection("users").document(firebaseUser.getUid()).set(user).addOnCompleteListener(userCreationTask -> {
                                 if (userCreationTask.isSuccessful()) {
                                     Toast.makeText(RegActivity.this, "Регистрация пройдена", Toast.LENGTH_SHORT).show();
                                 } else {

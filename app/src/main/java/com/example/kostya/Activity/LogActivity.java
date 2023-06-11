@@ -34,7 +34,7 @@ public class LogActivity extends AppCompatActivity {
         signUpBtn2 = findViewById(R.id.signUpBtn2);
         mAuth = FirebaseAuth.getInstance();
         FirebaseDatabase db = FirebaseDatabase.getInstance("https://semenikhin-89088-default-rtdb.europe-west1.firebasedatabase.app/");
-        DatabaseReference users = db.getReference("Users");
+        DatabaseReference users = db.getReference("users");
 
         signInBtn2.setOnClickListener(view -> {
             if (!TextUtils.isEmpty(input_email2.getText().toString()) && !TextUtils.isEmpty(input_password2.getText().toString())) {

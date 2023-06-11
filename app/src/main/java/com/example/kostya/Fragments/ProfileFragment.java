@@ -58,7 +58,7 @@ public class ProfileFragment extends Fragment {
             startActivity(intent);
         });
 
-        DocumentReference docRef = db.collection("Users").document(user.getUid());
+        DocumentReference docRef = db.collection("users").document(user.getUid());
 
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override

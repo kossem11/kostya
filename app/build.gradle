@@ -33,7 +33,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.firebase:firebase-firestore:24.0.1'
     implementation 'androidx.appcompat:appcompat:1.6.0-beta01'
     implementation 'com.google.android.material:material:1.8.0-alpha01'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha03'
@@ -42,12 +41,19 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.wear.tiles:tiles-material:1.1.0'
     implementation 'androidx.fragment:fragment:1.6.0-alpha02'
-    implementation 'com.google.firebase:firebase-database:20.0.6'
-    implementation 'com.google.firebase:firebase-auth:21.0.8'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4-alpha07'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha07'
     implementation 'com.google.android.material:material:1.8.0-alpha01'
+
+
+    //firebase
+    implementation 'com.google.firebase:firebase-firestore:24.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.6'
+    implementation 'com.google.firebase:firebase-auth:21.0.8'
+    implementation 'com.google.firebase:firebase-core:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+
 
 // Room
     def room_version = "2.4.1" // Используйте последнюю версию, которую можно найти здесь: https://developer.android.com/jetpack/androidx/releases/room

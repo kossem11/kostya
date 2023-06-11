@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.fragment:fragment:1.6.0-alpha02@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/db903a0eee6fbf2c45089cf6ec42e5ad/transformed/fragment-1.6.0-alpha02/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/5a61c6574386d5348bf482ffdfc1f9d9/transformed/fragment-1.6.0-alpha02/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/db903a0eee6fbf2c45089cf6ec42e5ad/transformed/fragment-1.6.0-alpha02/res" />
-      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/db903a0eee6fbf2c45089cf6ec42e5ad/transformed/fragment-1.6.0-alpha02/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/db903a0eee6fbf2c45089cf6ec42e5ad/transformed/fragment-1.6.0-alpha02/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/5a61c6574386d5348bf482ffdfc1f9d9/transformed/fragment-1.6.0-alpha02/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/5a61c6574386d5348bf482ffdfc1f9d9/transformed/fragment-1.6.0-alpha02/res" />
+      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/5a61c6574386d5348bf482ffdfc1f9d9/transformed/fragment-1.6.0-alpha02/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

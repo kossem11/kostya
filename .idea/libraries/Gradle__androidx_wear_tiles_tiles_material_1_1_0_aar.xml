@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.wear.tiles:tiles-material:1.1.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/26585304a3c182060f6144258a2e817b/transformed/tiles-material-1.1.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/eddbc9fbebc24d03e0f1c7f81c679299/transformed/tiles-material-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/26585304a3c182060f6144258a2e817b/transformed/tiles-material-1.1.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/26585304a3c182060f6144258a2e817b/transformed/tiles-material-1.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/26585304a3c182060f6144258a2e817b/transformed/tiles-material-1.1.0/res" />
+      <root url="jar://$USER_HOME$/Downloads/JDK/caches/transforms-3/eddbc9fbebc24d03e0f1c7f81c679299/transformed/tiles-material-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/eddbc9fbebc24d03e0f1c7f81c679299/transformed/tiles-material-1.1.0/res" />
+      <root url="file://$USER_HOME$/Downloads/JDK/caches/transforms-3/eddbc9fbebc24d03e0f1c7f81c679299/transformed/tiles-material-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
