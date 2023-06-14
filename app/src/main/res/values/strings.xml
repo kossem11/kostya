@@ -26,6 +26,7 @@
     <string name="weblink">www.mirea.ru</string>
     <string name="Оплата">Оплатить</string>
     <string name="text">Раздел содержит информацию о ЖКУ и ежемесячном добровольном страховании.\nС более подробной информацией Вы можете ознакомиться в Личном кабинете на сайте.</string>
-    <string name="menu">Меню</string>
-    <string name="home">Главная</string>
+    <string name="menu" translatable="false">Меню</string>
+    <string name="home" translatable="false">Главная</string>
+    <string name="textmain" translatable="false">        Данное приложени было создано студентом группы ИКБО-26-21 РТУ МИРЭА Семенихином К.В. для куррсовой работы</string>
 </resources>
